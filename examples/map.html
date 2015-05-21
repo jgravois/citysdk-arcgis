@@ -7,7 +7,7 @@
 
     <!-- we encourage you to replace 'latest' with a hardcode version number (like '1.0.0-rc.7') in production applications -->
     <script src="http://uscensusbureau.github.io/citysdk/static/js/jquery.js"></script>
-    <script src="//cdn.jsdelivr.net/leaflet.esri/latest/esri-leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/leaflet.esri/latest/esri-leaflet.js"></script>
     <script src="https://rawgit.com/uscensusbureau/citysdk/master/js/citysdk.js"></script>
     <script src="https://rawgit.com/uscensusbureau/citysdk/master/js/citysdk.census.js"></script>
 
@@ -38,7 +38,7 @@
         var myLayer = L.geoJson().addTo(map);
         myLayer.addData(response);
         var popupTemplate = "<h3>{NAME}</h3>";
-     
+
       };
 
       census.GEORequest(request, callback);
